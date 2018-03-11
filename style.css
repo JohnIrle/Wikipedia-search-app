@@ -1,0 +1,30 @@
+html,body {
+  height: 100%;
+  width:100%;
+  min-height: 100%;
+}
+
+body { padding-top: 65px; }
+
+.jumbotron {
+  margin-top: 50px;
+}
+
+body {
+  background-image: url(http://i67.tinypic.com/2w6vvxg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin:0;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+.media-container {
+  height: 100%;
+}
+
+.media-container article {
+  height: 100%;
+}
