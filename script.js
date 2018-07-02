@@ -20,10 +20,11 @@ function loadData() {
       } else {
         response = data.query.pages;
       }
-      console.log(response);
+
       for (var i in response) {
         var responseStr = response[i];
         var url = responseStr.fullurl;
+
         $(".media-container").append(
           '<article class="well"><h3><a href=' +
             url +
@@ -37,6 +38,7 @@ function loadData() {
       }
     }
   });
+
   return false;
 }
 
