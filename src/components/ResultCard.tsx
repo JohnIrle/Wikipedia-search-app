@@ -1,7 +1,13 @@
-import React from 'react';
-import { Card } from 'react-bootstrap';
+import React from "react";
+import { Card } from "react-bootstrap";
 
-const ResultCard = ({ title, extract, url }) => {
+interface ResultCardProps {
+    title: string;
+    extract: string;
+    url: string;
+}
+
+const ResultCard: React.FC<ResultCardProps> = ({ title, extract, url }) => {
     return (
         <Card style={{ paddingBottom: "1rem" }}>
             <Card.Body>
@@ -10,12 +16,10 @@ const ResultCard = ({ title, extract, url }) => {
                         {title}
                     </a>
                 </Card.Title>
-                <Card.Text>
-                    {extract}
-                </Card.Text>
+                <Card.Text>{extract}</Card.Text>
             </Card.Body>
         </Card>
-    )
-}
+    );
+};
 
 export default ResultCard;
