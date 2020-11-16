@@ -4,7 +4,6 @@ import axios from "axios";
 import "./App.css";
 
 import SearchForm from "./components/SearchForm";
-import NavBar from "./components/NavBar";
 import ResultCard from "./components/ResultCard";
 
 export interface CleanedResponse {
