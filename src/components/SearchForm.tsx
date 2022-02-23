@@ -8,7 +8,7 @@ interface SearchFormProps {
   ) => Promise<void>;
 }
 
-const SearchForm: React.FC<SearchFormProps> = ({ submit }) => {
+const SearchForm = ({ submit }: SearchFormProps) => {
   const [formData, setFormData] = useState({
     searchTerm: "",
   });
