@@ -1,6 +1,6 @@
 # Wikipedia-search-app
 
-![Screenshot](/wiki-lg.png)
+![Screenshot](./wiki-lg.png)
 
 A React application that uses Axios to make a request to the wikipedia api with an entered search term and displays the results.
 
