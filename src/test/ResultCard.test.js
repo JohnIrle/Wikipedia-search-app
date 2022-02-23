@@ -1,25 +1,20 @@
 import React from "react";
-import { render, unmountComponentAtNode } from "react-dom";
-import { act } from "react-dom/test-utils";
+import {screen, render} from "@testing-library/react"
 
 import ResultCard from "../components/ResultCard";
 
-let container = null;
-beforeEach(() => {
-  container = document.createElement("div");
-  document.body.appendChild(container);
-});
-
-afterEach(() => {
-  unmountComponentAtNode(container);
-  container.remove();
-  container = null;
-});
-
 it("renders props", () => {
-  act(() => {
-    render(<ResultCard title="Title" extract="Extract" url="url" />, container);
-    console.log(container);
-  });
-  expect(container.querySelector("card-text").textContent).toBe("extract");
+    const $title = "Title"
+    const $extract = "Extract"
+    const $url = "http://example.com"
+
+  render(<ResultCard title={$title} extract={$extract} url={$url} />);
+
+    const title = screen.getByText($title)
+    const extract = screen.getByText($extract)
+    const url = document.querySelector("a").getAttribute("href")
+
+    expect(title).toBeInTheDocument();
+    expect(extract).toBeInTheDocument();
+    expect(url).toBe($url);
 });
