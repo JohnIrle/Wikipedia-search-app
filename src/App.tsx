@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2019 John Irle
+//
+// SPDX-License-Identifier: MIT
+
 import React, { useState } from "react";
 import { Container, Jumbotron } from "react-bootstrap";
 import axios from "axios";

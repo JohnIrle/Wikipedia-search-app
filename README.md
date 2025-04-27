@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2019 John Irle
+
+SPDX-License-Identifier: MIT
+-->
+
 # Wikipedia-search-app
 
 ![Screenshot](./wiki-lg.png)

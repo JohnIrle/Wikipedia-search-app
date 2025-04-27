@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2019 John Irle
+//
+// SPDX-License-Identifier: MIT
+
 import React, { useState } from "react";
 import { Row, Col, Form, Button } from "react-bootstrap";
 

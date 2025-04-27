@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2019 John Irle
+//
+// SPDX-License-Identifier: MIT
+
 import * as React from "react";
 import { render } from "@testing-library/react";
 import SearchForm from "../components/SearchForm";

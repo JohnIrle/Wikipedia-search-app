@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2019 John Irle
+//
+// SPDX-License-Identifier: MIT
+
 import { rest } from "msw";
 
 export const handlers = [
